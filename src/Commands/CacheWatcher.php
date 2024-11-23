@@ -1,6 +1,6 @@
 <?php
 
-namespace Omaresmaeel\CacheWatcher\Commands;
+namespace Omaresmael\CacheWatcher\Commands;
 
 use Illuminate\Console\Command;
 use Spatie\Watcher\Watch;

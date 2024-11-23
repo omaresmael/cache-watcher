@@ -1,7 +1,7 @@
 <?php
-namespace Omaresmaeel\CacheWatcher;
+namespace Omaresmael\CacheWatcher;
 use Illuminate\Support\ServiceProvider;
-use Omaresmaeel\CacheWatcher\Commands\CacheWatcher;
+use Omaresmael\CacheWatcher\Commands\CacheWatcher;
 
 class CacheWatcherServiceProvider extends ServiceProvider
 {

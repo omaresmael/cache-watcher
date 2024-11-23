@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b480418b77341186ceb83b0d952827c6",
+    "content-hash": "0b919d4f23667d2ef6ba7d82ee15c7d6",
     "packages": [
         {
             "name": "spatie/file-system-watcher",

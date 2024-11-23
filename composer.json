@@ -1,0 +1,35 @@
+{
+    "name": "omaresmaeel/cache-watcher",
+    "description": "Laravel package that monitors the changes on the cacheable files and refresh them",
+    "keywords": [
+        "laravel",
+        "cache-watcher",
+        "laravel-cache-watcher"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Omaresmaeel\\CacheWatcher\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "omaresmaeel",
+            "email": "omaresmael590@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "orchestra/testbench": "^9.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Omaresmaeel\\CacheWatcher\\CacheWatcherServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "spatie/file-system-watcher": "^1.2"
+    }
+}

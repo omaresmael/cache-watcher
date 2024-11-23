@@ -17,7 +17,7 @@ class CacheWatcher extends Command
     public function handle(): void
     {
 
-        $this->components->info('Cacheable files [config, routes, events] is being monitored for any change...' );
+        $this->components->info('Cacheable files [config, routes, events] are being monitored for any change...' );
         $this->process = Process::fromShellCommandline('php artisan optimize');
         Watch::paths($this->getCacheableFilePaths())
             ->onAnyChange(function (string $event, string $path) {

@@ -12,7 +12,7 @@ class CacheWatcher extends Command
 
     protected $signature = 'cache:watch';
 
-    protected $description = 'Command description';
+    protected $description = 'Watch the cacheable files and refresh them on change';
 
     public function handle(): void
     {
@@ -21,7 +21,7 @@ class CacheWatcher extends Command
         $this->process = Process::fromShellCommandline('php artisan optimize');
         Watch::paths($this->getCacheableFilePaths())
             ->onAnyChange(function (string $event, string $path) {
-                $this->components->warn("detected a change in $path");
+                $this->components->warn("Detected a change in $path");
                 $this->process->run();
                 $this->components->success('The Cached Files have been refreshed');
             })
